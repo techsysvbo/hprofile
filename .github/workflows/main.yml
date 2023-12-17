@@ -11,6 +11,9 @@ jobs:
       - name: maven test
         run: mvn test
       
+      - name: Install mvn plugin
+        run: mvn my.plugin.groupId:foo-maven-plugin:1.0.0:bar
+      
       - name: Checkstyle
         run: mvn checkstyle:checkstyle
 
